@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle,
+.square {
+  width: 100px;
+  height: 100px;
+  animation: spinType 6s linear infinite;
+}
+
+@keyframes spinType {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.circle {
+  fill: #9fa0a0;
+}
+
+.square {
+  fill: #3e3a39;
+}
